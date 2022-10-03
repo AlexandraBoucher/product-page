@@ -48,6 +48,11 @@ header nav ul li a:focus {
   text-decoration: underline;
 }
 
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 footer {
   text-align: center;
 }
