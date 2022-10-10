@@ -31,8 +31,24 @@ align-items: center;
 color: black;
 }
 
-nav ul a {
+nav a {
   text-decoration: none;
   color: black;
   margin: 0 1rem;
+}
+
+nav a:hover {
+  border:
+}
+
+.pictures {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: red;
+}
+
+
+.pictures li:first-child {
+  grid-column: 1 / -1;
 }
