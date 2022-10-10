@@ -47,6 +47,7 @@ article {
 }
 
 .picture ul {
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -192,12 +193,18 @@ blockquote cite {
 
 @media only screen and (min-width: 1280px){
   .picture ul {
-    background-color: red;
+    /* background-color: red; */
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
   .picture li:first-child {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    align-self: center;
+    }
+  .picture li:not(:first-child) {
+    max-width: 93%;
+    /* not too sure about the right way to make large image take up all of grid container */
   }
+
 }
