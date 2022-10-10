@@ -17,7 +17,7 @@ html {
 }
 
 header img{
-  width: 30%;
+  width: 40%;
 }
 
 
@@ -26,7 +26,7 @@ list-style: none;
 text-decoration: none;
 display: flex;
 flex-direction: row;
-justify-content:sapce between;
+justify-content:space between;
 align-items: center;
 color: black;
 }
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  border:
+  text-decoration: underline;
 }
 
 .pictures {
@@ -46,8 +46,14 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: red;
+  gap: .5rem;
 }
 
+.pictures li img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .pictures li:first-child {
   grid-column: 1 / -1;
