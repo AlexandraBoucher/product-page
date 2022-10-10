@@ -41,7 +41,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.pictures {
+main {
+  display: grid;
+}
+
+.picture ul {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,13 +55,13 @@ nav a:hover {
   list-style: none;
 }
 
-.pictures li img{
+.picture li img{
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.pictures li:first-child {
+.picture li:first-child {
   grid-column: 1 / -1;
 }
 
@@ -113,6 +117,10 @@ span a:hover {
   background-color: #8dd579;
 }
 
+.care dl {
+  margin: 0 0 1rem 0;
+}
+
 .care dt {
    float: left;
    margin-right: 6px;
@@ -125,18 +133,23 @@ span a:hover {
 .included ul{
   list-style-type: square;
   padding-left: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 blockquote {
-  margin-left: 0;
+  margin: 0 0 1rem 0;
 }
 
 blockquote cite {
   font-size: .8rem;
 }
 
+.browsed {
+  padding: 0 2rem;
+}
+
 .also-browsed {
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
@@ -159,3 +172,23 @@ blockquote cite {
 .also-browsed a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 768px){
+ main {
+   grid-template-columns: 1fr 1fr;
+ }
+ .picture {
+   margin-bottom: 4rem;
+ }
+ .info {
+   grid-row: 3 / -2;
+   grid-column: 2 /-1
+ }
+
+ .para-1 {
+   font-size: 1rem;
+ }
+
+}
+
+@media only screen and (min-width: 1280px)
