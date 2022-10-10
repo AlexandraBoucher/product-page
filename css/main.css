@@ -41,8 +41,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
+article {
   display: grid;
+  padding-left: 1rem;
 }
 
 .picture ul {
@@ -51,7 +52,6 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   /* background-color: red; */
   gap: 1rem;
-  padding: 0 2rem;
   list-style: none;
 }
 
@@ -65,9 +65,9 @@ main {
   grid-column: 1 / -1;
 }
 
-.info {
+/* .info {
   margin: 0 2rem;
-}
+} */
 
 h2 {
   font-size: 2rem;
@@ -76,9 +76,6 @@ h2 {
 
 p {
   margin: 0;
-}
-.money-tree {
-  /* background-color: pink; */
 }
 
 .para-1 {
@@ -174,21 +171,24 @@ blockquote cite {
 }
 
 @media only screen and (min-width: 768px){
- main {
+article {
    grid-template-columns: 1fr 1fr;
- }
- .picture {
-   margin-bottom: 4rem;
- }
- .info {
-   grid-row: 3 / -2;
-   grid-column: 2 /-1
+   grid-column-gap: 1rem;
  }
 
+ /* .info {
+   grid-row: 3 / -2;
+   grid-column: 2 /-1
+ } */
  .para-1 {
    font-size: 1rem;
  }
-
+ .also-browsed {
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media only screen and (min-width: 1280px)
+/* @media only screen and (min-width: 1280px){
+  .also-browsed {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} */
