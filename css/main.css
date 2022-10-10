@@ -12,23 +12,23 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr auto;
+  margin: 0 2rem;
+  /* background-color: pink; */
   align-items: center;
 }
 
 header img{
-  width: 40%;
+  width: 50%;
 }
 
 
 nav ul {
 list-style: none;
-text-decoration: none;
 display: flex;
 flex-direction: row;
-justify-content:space between;
-align-items: center;
 color: black;
+font-size: 1.5rem;
 }
 
 nav a {
@@ -45,8 +45,10 @@ nav a:hover {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: red;
-  gap: .5rem;
+  /* background-color: red; */
+  gap: 1rem;
+  padding: 0 2rem;
+  list-style: none;
 }
 
 .pictures li img{
@@ -57,4 +59,16 @@ nav a:hover {
 
 .pictures li:first-child {
   grid-column: 1 / -1;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.money-tree {
+  background-color: pink;
 }
