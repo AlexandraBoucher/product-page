@@ -191,7 +191,13 @@ blockquote cite {
 }
 
 @media only screen and (min-width: 1280px){
-  .also-browsed {
+  .picture ul {
     background-color: red;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .picture li:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
   }
 }
