@@ -1,9 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html {
   box-sizing: border-box;
-  font-family: Georgia, serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+header img{
+  width: 30%;
+}
+
+
+nav ul {
+list-style: none;
+text-decoration: none;
+display: flex;
+flex-direction: row;
+justify-content:sapce between;
+align-items: center;
+color: black;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
 }
