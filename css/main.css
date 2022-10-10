@@ -19,7 +19,7 @@ html {
 }
 
 header img{
-  width: 50%;
+  width: 100%;
 }
 
 
@@ -28,13 +28,13 @@ list-style: none;
 display: flex;
 flex-direction: row;
 color: black;
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  margin: 0 1rem;
+  margin: 0 .5rem;
 }
 
 nav a:hover {
@@ -78,7 +78,7 @@ p {
 }
 
 .para-1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -113,15 +113,24 @@ span a:hover {
   background-color: #8dd579;
 }
 
-.care {
-  background-color: pink;
-}
-
 .care dt {
    float: left;
-   clear: left;
+   margin-right: 6px;
 }
 
-dt::after {
-   content: " ";
+.care dd {
+  margin-left: 0;
+}
+
+.included ul{
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+blockquote cite {
+  font-size: .8rem;
 }
