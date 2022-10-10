@@ -4,13 +4,14 @@ html {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
+  background-color: #fcf0f1;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.wrapper {
+header {
   display: grid;
   grid-template-columns: 3fr auto;
   padding: 0 1rem;
@@ -33,7 +34,7 @@ font-size: 1rem;
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #025e3d;
   margin: 0 .5rem;
 }
 
@@ -68,7 +69,8 @@ article {
 
 h2 {
   font-size: 1.5rem;
-  margin: 0;
+  margin: 0 0 1rem;
+  color: #025e3d;
 }
 
 p {
@@ -88,6 +90,7 @@ p {
 .para-3 {
   font-size: 1.5rem;
   margin: 1rem 0;
+  color: #025e3d;
 }
 
 span {
@@ -100,8 +103,8 @@ span a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  border: 1px solid #003300;
-  background-color: #003300;
+  border: 1px solid #025e3d;
+  background-color: #025e3d;
   padding: .3em .6em;
   border-radius: .3em;
 }
@@ -134,8 +137,12 @@ blockquote {
   margin: 0 0 1rem 0;
 }
 
-blockquote cite {
+blockquote p {
   font-size: .8rem;
+}
+
+blockquote cite {
+  font-size: .7rem;
 }
 
 .browsed {
@@ -144,9 +151,10 @@ blockquote cite {
 
 .browsed h2 {
   font-size: 1rem;
+  color: #025e3d;
 }
 
-.also-browsed {
+.browsed ul {
   /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,18 +165,18 @@ blockquote cite {
   margin: .5rem 0 2rem 0;
 }
 
-.also-browsed li img{
+.browsed ul li img{
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.also-browsed a {
+.browsed ul a {
   text-decoration: none;
   color: black;
 }
 
-.also-browsed a:hover {
+.browsed ul a:hover {
   text-decoration: underline;
 }
 
@@ -186,7 +194,7 @@ blockquote cite {
    .para-1 {
      font-size: 1rem;
    }
-   .also-browsed {
+   .browsed ul {
      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 }
@@ -203,8 +211,15 @@ blockquote cite {
     align-self: center;
     }
   .picture li:not(:first-child) {
-    max-width: 93%;
+    max-width: 94%;
     /* not too sure about the right way to make large image take up all of grid container */
   }
 
+  span {
+    justify-content: flex-start;
+    padding: 1rem 0 2rem;
+  }
+  header img {
+    width: 50%;
+  }
 }
