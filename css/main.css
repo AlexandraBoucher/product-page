@@ -166,11 +166,11 @@ blockquote cite {
   margin: .5rem 0 2rem 0;
 }
 
-/* .browsed ul li img{
+.browsed ul li img{
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 .browsed ul a {
   text-decoration: none;
