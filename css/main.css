@@ -15,14 +15,13 @@ header {
   display: grid;
   grid-template-columns: 3fr auto;
   padding: 0 1rem;
-  /* background-color: pink; */
   align-items: center;
 }
 
 header img{
   width: 100%;
+  margin-top:.5rem;
 }
-
 
 nav ul {
 list-style: none;
